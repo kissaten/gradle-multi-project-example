@@ -1,0 +1,14 @@
+subprojects {
+  apply plugin: 'checkstyle'
+  checkstyle {
+      ignoreFailures = true
+      configFile = rootProject.file('codequality/checkstyle.xml')
+  }
+
+  apply plugin: 'findbugs'
+  findbugs {
+      ignoreFailures = true
+  }
+
+  apply plugin: 'pmd'
+}

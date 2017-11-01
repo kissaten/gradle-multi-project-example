@@ -1,0 +1,22 @@
+apply plugin: 'idea'
+
+allprojects {
+    repositories {
+        mavenLocal()
+        mavenCentral() // maven { url: 'http://jcenter.bintray.com' }
+    }
+}
+
+apply from: file('gradle/check.gradle')
+
+subprojects {
+    apply plugin: 'java'
+
+    group = "io.jeffchao.${rootProject.name}"
+
+    dependencies {
+        implementation 'com.google.guava:guava:23.0'
+        testCompile 'org.mockito:mockito-core:2.11.0'
+        testImplementation 'junit:junit:4.12'
+    }
+}
