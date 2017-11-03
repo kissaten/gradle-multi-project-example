@@ -6,7 +6,7 @@ import org.junit.After;
 import org.junit.Before;
 
 
-public class FooTest {
+public class CoreTest {
 
     @Before
     public void setUp() throws Exception {
