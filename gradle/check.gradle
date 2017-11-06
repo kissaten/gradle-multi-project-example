@@ -3,6 +3,7 @@ subprojects {
   checkstyle {
       ignoreFailures = true
       configFile = rootProject.file('codequality/checkstyle.xml')
+      toolVersion = '8.4'
   }
 
   apply plugin: 'findbugs'
