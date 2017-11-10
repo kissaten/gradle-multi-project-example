@@ -1,2 +1,10 @@
+apply plugin: 'application'
+
+mainClassName = 'io.jeffchao.template.server.Server'
+
 dependencies {
+}
+
+run.doFirst {
+  // Environment variables go here.
 }
