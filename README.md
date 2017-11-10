@@ -43,7 +43,8 @@ $ ./gradlew clean stage
 
 ### Running
 
-Use the Gradle `application` plugin. However, `./gradlew run` will run applications in lexicographical order.
+Use the Gradle [application plugin](https://docs.gradle.org/current/userguide/application_plugin.html).
+However, `./gradlew run` will run applications in lexicographical order.
 Instead, explicitly specify which subproject to run:
 
 ```
