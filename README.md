@@ -1,4 +1,4 @@
-# basic-gradle-template
+# gradle-multi-project-example
 
 Basic gradle template with subprojects, deployable to Heroku as separate dyno processes.
 
